@@ -9,7 +9,7 @@ class Sheduler(webapp2.RequestHandler):
 
         try:
             response = urlfetch.fetch(
-                url='https://us-central1-' + appId + '.cloudfunctions.net/nxSyncRequest',
+                url='https://us-central1-' + appId + '.cloudfunctions.net/cronEndpoint',
                 payload=urllib.urlencode({'key': os.environ.get('CRON_API_KEY')}),
                 method=urlfetch.POST,
                 headers={'Content-Type': 'application/x-www-form-urlencoded'})
