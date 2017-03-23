@@ -1,0 +1,9 @@
+{
+  "name": "functions",
+  "description": "Cron/Schedule project for Firebase Cloud Functions",
+  "dependencies": {
+    "firebase-admin": "^4.1.2",
+    "firebase-functions": "^0.5"
+  },
+  "private": true
+}
