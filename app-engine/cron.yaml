@@ -1,0 +1,4 @@
+cron:
+- description: "Run cron job"
+  url: /cron
+  schedule: every 30 minutes

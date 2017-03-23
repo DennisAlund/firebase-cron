@@ -1,0 +1,11 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /cron
+  script: main.app
+  login: admin
+
+env_variables:
+  CRON_API_KEY: '{CRON_API_KEY}'
