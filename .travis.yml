@@ -14,5 +14,5 @@ install:
   - cd ..
 script:
   - firebase use default --token $FIREBASE_DEPLOY_KEY
-  - firebase functions:config:set cron.apiKey=$CRON_API_KEY --token $FIREBASE_DEPLOY_KEY
+  - firebase functions:config:set cron.apikey=$CRON_API_KEY --token $FIREBASE_DEPLOY_KEY
   - firebase deploy -m "build $TRAVIS_BUILD_NUMBER" --non-interactive --token $FIREBASE_DEPLOY_KEY

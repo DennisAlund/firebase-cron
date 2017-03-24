@@ -1,5 +1,5 @@
-export const cronEndpoint = functions.https.onRequest(async(request, response) => {
-    if (functions.config().cron.apiKey !== request.body.key) {
+export const cronEndpoint = functions.https.onRequest((request, response) => {
+    if (functions.config().cron.apikey !== request.body.key) {
         response.status(401).send("I'm sorry Dave, I'm afraid I can't do that");
         return;
     }
